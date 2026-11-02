@@ -1,6 +1,6 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
 ---
@@ -77,3 +77,19 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issue list
+
+- [#1 — Run log reader](https://github.com/renzop/mega-s01e04-before-i-looked/issues/1)
+- [#2 — Digest HTML page](https://github.com/renzop/mega-s01e04-before-i-looked/issues/2)
+- [#3 — Digest JSON endpoint](https://github.com/renzop/mega-s01e04-before-i-looked/issues/3)
+- [#4 — Status board digest links](https://github.com/renzop/mega-s01e04-before-i-looked/issues/4)
+- [#5 — Digest route tests](https://github.com/renzop/mega-s01e04-before-i-looked/issues/5)
+- [#6 — Publish review preview](https://github.com/renzop/mega-s01e04-before-i-looked/issues/6)
+- [#7 — Remove preview marker and archive plan](https://github.com/renzop/mega-s01e04-before-i-looked/issues/7)
+
+## Completion
+
+The course confirmed that the reviewer saw the preview before cleanup. After separate human approval, the page was exported with LANE_MARKER unset and replaced at the same public URL. The public HTML was fetched and verified to match the cleaned local export, with "no marker set" and without the original marker. Previews and environment files remain outside version control.
+
+Validation: 69 tests pass, typecheck passes, both fixture nights render, HTML/JSON job order agrees, and runs/ is unchanged. Course acceptance of the final claim is tracked separately from this completed implementation plan.
