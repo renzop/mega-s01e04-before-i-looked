@@ -14,8 +14,8 @@ function tableRows(html: string): string[] {
 }
 
 function cells(row: string): string[] {
-  return [...row.matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)]
-    .map((match) => match[1].replace(/<[^>]*>/g, '').trim());
+  return [...row.matchAll(/<(td|th)\b[^>]*>([\s\S]*?)<\/\1>/gi)]
+    .map((match) => match[2].replace(/<[^>]*>/g, '').trim());
 }
 
 function isMarked(row: string): boolean {
